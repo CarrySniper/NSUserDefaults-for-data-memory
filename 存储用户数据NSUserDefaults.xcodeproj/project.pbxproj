@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30A65831A29C5070039530A /* iOS8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D30A65821A29C5070039530A /* iOS8.jpg */; };
 		D37F232C1A29590D006F0776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37F232B1A29590D006F0776 /* Foundation.framework */; };
 		D37F232E1A29590D006F0776 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37F232D1A29590D006F0776 /* CoreGraphics.framework */; };
 		D37F23301A29590D006F0776 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37F232F1A29590D006F0776 /* UIKit.framework */; };
@@ -22,6 +23,8 @@
 		D37F234D1A29590D006F0776 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37F23311A29590D006F0776 /* CoreData.framework */; };
 		D37F23551A29590D006F0776 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D37F23531A29590D006F0776 /* InfoPlist.strings */; };
 		D37F23571A29590D006F0776 /* ______NSUserDefaultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F23561A29590D006F0776 /* ______NSUserDefaultsTests.m */; };
+		D37F23661A295D74006F0776 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F23651A295D74006F0776 /* Person.m */; };
+		D37F236A1A296D89006F0776 /* demoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D37F23691A296D89006F0776 /* demoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D30A65821A29C5070039530A /* iOS8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iOS8.jpg; sourceTree = "<group>"; };
 		D37F23281A29590D006F0776 /* 存储用户数据NSUserDefaults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "存储用户数据NSUserDefaults.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37F232B1A29590D006F0776 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D37F232D1A29590D006F0776 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,11 @@
 		D37F23521A29590D006F0776 /* 存储用户数据NSUserDefaultsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "存储用户数据NSUserDefaultsTests-Info.plist"; sourceTree = "<group>"; };
 		D37F23541A29590D006F0776 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D37F23561A29590D006F0776 /* ______NSUserDefaultsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______NSUserDefaultsTests.m"; sourceTree = "<group>"; };
+		D37F23641A295D74006F0776 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D37F23651A295D74006F0776 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D37F23671A295D9B006F0776 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		D37F23681A296D89006F0776 /* demoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demoViewController.h; sourceTree = "<group>"; };
+		D37F23691A296D89006F0776 /* demoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +93,10 @@
 		D37F231F1A29590D006F0776 = {
 			isa = PBXGroup;
 			children = (
+				D30A65821A29C5070039530A /* iOS8.jpg */,
+				D37F23681A296D89006F0776 /* demoViewController.h */,
+				D37F23691A296D89006F0776 /* demoViewController.m */,
+				D37F23631A295D74006F0776 /* 用户账号 */,
 				D37F23331A29590D006F0776 /* 存储用户数据NSUserDefaults */,
 				D37F23501A29590D006F0776 /* 存储用户数据NSUserDefaultsTests */,
 				D37F232A1A29590D006F0776 /* Frameworks */,
@@ -151,6 +164,16 @@
 				D37F23531A29590D006F0776 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D37F23631A295D74006F0776 /* 用户账号 */ = {
+			isa = PBXGroup;
+			children = (
+				D37F23641A295D74006F0776 /* Person.h */,
+				D37F23651A295D74006F0776 /* Person.m */,
+				D37F23671A295D9B006F0776 /* config.h */,
+			);
+			path = "用户账号";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D37F23381A29590D006F0776 /* InfoPlist.strings in Resources */,
+				D30A65831A29C5070039530A /* iOS8.jpg in Resources */,
 				D37F23431A29590D006F0776 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +274,8 @@
 			files = (
 				D37F233E1A29590D006F0776 /* AppDelegate.m in Sources */,
 				D37F23411A29590D006F0776 /* ______NSUserDefaults.xcdatamodeld in Sources */,
+				D37F236A1A296D89006F0776 /* demoViewController.m in Sources */,
+				D37F23661A295D74006F0776 /* Person.m in Sources */,
 				D37F233A1A29590D006F0776 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +473,7 @@
 				D37F235C1A29590D006F0776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D37F235D1A29590D006F0776 /* Build configuration list for PBXNativeTarget "存储用户数据NSUserDefaultsTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +482,7 @@
 				D37F235F1A29590D006F0776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
