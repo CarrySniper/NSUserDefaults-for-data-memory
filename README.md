@@ -39,15 +39,12 @@ NSUserDefaults存储登陆账号信息，用户名、明文密码、头像、sig
 #pragma mark- set方法
 pragma mark 一般都必备的数据
 
-
 -(void)setUserId:(NSString *)userId{
 
     [[NSUserDefaults standardUserDefaults] setObject:userId forKey:userDefaultStringUserID];
     [[NSUserDefaults standardUserDefaults] synchronize];
     _userId = userId;
     }
-
-
 -(void)setUserName:(NSString *)userName{
 
     [[NSUserDefaults standardUserDefaults] setObject:userName forKey:userDefaultStringUserName];
@@ -66,7 +63,6 @@ pragma mark 一般都必备的数据
     [[NSUserDefaults standardUserDefaults] synchronize];
     _sign = sign;
     }
-
 #pragma mark 定制的数据
 //联系号码
 -(void)setPhoneNumber:(NSString *)phoneNumber{
@@ -101,7 +97,7 @@ pragma mark 一般都必备的数据
     [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:userDefaultDataHeadPicture];
     [[NSUserDefaults standardUserDefaults] synchronize];
     _headPicture = headPicture;
-}
+    }
 //是否登陆
 -(void)setIsLogin:(BOOL)isLogin{
 
