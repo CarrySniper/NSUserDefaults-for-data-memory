@@ -85,7 +85,7 @@ pragma mark 一般都必备的数据
     [[NSUserDefaults standardUserDefaults] synchronize];
     _headPicURL = headPicURL;
     }
-//头像，需要想转换为NSData
+//头像，需要转换为NSData
 -(void)setHeadPicture:(UIImage *)headPicture{
 
     NSData *imageData;
