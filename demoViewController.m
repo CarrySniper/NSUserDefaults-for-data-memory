@@ -52,6 +52,7 @@
     uidNumber = [[UITextField alloc]initWithFrame:CGRectMake(CGRectGetMaxX(idLabel.frame), CGRectGetMinY(idLabel.frame), 200, CGRectGetHeight(idLabel.frame))];
     uidNumber.borderStyle = UITextBorderStyleRoundedRect;
     uidNumber.placeholder = @"输入编号";
+    uidNumber.delegate = self;
     [self.view addSubview:uidNumber];
     /*
      UI姓名
@@ -65,6 +66,7 @@
     nameText = [[UITextField alloc]initWithFrame:CGRectMake(CGRectGetMaxX(nameLabel.frame), CGRectGetMinY(nameLabel.frame), CGRectGetWidth(uidNumber.frame), CGRectGetHeight(nameLabel.frame))];
     nameText.borderStyle = UITextBorderStyleRoundedRect;
     nameText.placeholder = @"输入姓名";
+    nameText.delegate = self;
     [self.view addSubview:nameText];
 
     
@@ -79,6 +81,7 @@
     passwordText = [[UITextField alloc]initWithFrame:CGRectMake(CGRectGetMaxX(passwordLabel.frame), CGRectGetMinY(passwordLabel.frame), CGRectGetWidth(uidNumber.frame), CGRectGetHeight(passwordLabel.frame))];
     passwordText.borderStyle = UITextBorderStyleRoundedRect;
     passwordText.placeholder = @"输入密码";
+    passwordText.delegate = self;
     [self.view addSubview:passwordText];
     /*
      UI标识
@@ -91,6 +94,7 @@
     signText = [[UITextField alloc]initWithFrame:CGRectMake(CGRectGetMaxX(idLabel.frame), CGRectGetMinY(signLabel.frame), CGRectGetWidth(uidNumber.frame), CGRectGetHeight(passwordLabel.frame))];
     signText.borderStyle = UITextBorderStyleRoundedRect;
     signText.placeholder = @"输入SIGN";
+    signText.delegate = self;
     [self.view addSubview:signText];
     /*
      UI号码
@@ -103,6 +107,7 @@
     phoneText = [[UITextField alloc]initWithFrame:CGRectMake(CGRectGetMaxX(idLabel.frame), CGRectGetMinY(phoneLabel.frame), CGRectGetWidth(uidNumber.frame), CGRectGetHeight(passwordLabel.frame))];
     phoneText.borderStyle = UITextBorderStyleRoundedRect;
     phoneText.placeholder = @"输入联系号码";
+    phoneText.delegate = self;
     [self.view addSubview:phoneText];
     
     /*
@@ -120,6 +125,7 @@
     textView = [[UITextView alloc]initWithFrame:CGRectMake(5, CGRectGetMaxY(searchBtn.frame)+20, 200, 280)];
     textView.backgroundColor = [UIColor clearColor];
     textView.textColor = [UIColor whiteColor];
+    textView.editable = NO;
     [self.view addSubview:textView];
     
     UILabel *saveLabel = [[UILabel alloc]initWithFrame:CGRectMake(315-100, CGRectGetMaxY(searchBtn.frame)+20, 100, CGRectGetHeight(idLabel.frame))];
@@ -160,6 +166,12 @@
     
     imageView.image = person.headPicture;
     
+}
+//点击return 按钮 去掉
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 -(void)btnClick:(UIButton *)sender{
     Person *person = [Person callPerson];

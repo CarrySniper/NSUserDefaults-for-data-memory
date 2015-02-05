@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2CE27E8F-D9A3-4CDD-B963-4F94A95068C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>存储用户数据NSUserDefaults</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FF8A68C3CC897C5A0715B4FE74E8452B511AF6A9</key>
+		<string>https://github.com/cjq002/-NSUserDefaults.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>存储用户数据NSUserDefaults.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FF8A68C3CC897C5A0715B4FE74E8452B511AF6A9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cjq002/-NSUserDefaults.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FF8A68C3CC897C5A0715B4FE74E8452B511AF6A9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FF8A68C3CC897C5A0715B4FE74E8452B511AF6A9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E5%AD%98%E5%82%A8%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AENSUserDefaults</string>
+		</dict>
+	</array>
+</dict>
+</plist>
